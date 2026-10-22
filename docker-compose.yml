@@ -1,0 +1,16 @@
+services:
+  alliance-siege-bot:
+    build: .
+    container_name: budanow_alliance_siege
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      TZ: Europe/Kyiv
+    volumes:
+      - ./credentials.json:/app/credentials.json:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"

@@ -1,0 +1,7 @@
+discord.py>=2.3.2
+google-auth>=2.29.0
+gspread>=6.1.0
+python-dotenv>=1.0.1
+tzdata>=2024.1
+pynacl>=1.6.0
+davey>=0.1.5
